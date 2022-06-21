@@ -1,5 +1,6 @@
 import Author from "./Author";
 import Category from "./Category";
+import { Link } from "react-router-dom";
 
 const Contents = ({ post }) => {
   return (
@@ -7,7 +8,7 @@ const Contents = ({ post }) => {
       {post.map((post) => {
         return (
           <li>
-            <a href="post-view.html" className="post">
+            <Link to="/postview" className="post">
               <article>
                 <img src={post.thumbnail} alt="" />
                 <div className="contents-wrap">
@@ -35,7 +36,7 @@ const Contents = ({ post }) => {
                   </p>
                 </div>
               </article>
-            </a>
+            </Link>
           </li>
         );
       })}

@@ -1,0 +1,9 @@
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  top: 9.2rem;
+  right: 8rem;
+  font-size: 1.6rem;
+}
