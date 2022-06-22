@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
+import "./backbtn.css";
+
 function BackBtn() {
   return (
-    <a href="./" class="btn-back">
+    <Link to="/" class="btn-back">
       <span class="a11y-hidden">Back</span>
-    </a>
+    </Link>
   );
 }
 

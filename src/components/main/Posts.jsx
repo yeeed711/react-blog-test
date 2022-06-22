@@ -4,16 +4,16 @@ import Contents from "./Contents";
 import "./posts.css";
 
 const Posts = () => {
-  const [post, setPost] = useState([]);
+  const [data, setData] = useState([]);
   useEffect(() => {
     axios.get("./data.json").then((respones) => {
-      setPost(respones.data.posts);
+      setData(respones.data.posts);
     });
   }, []);
 
   return (
     <ul className="posts">
-      <Contents post={post} />
+      <Contents data={data} />
     </ul>
   );
 };

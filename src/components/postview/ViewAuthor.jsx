@@ -1,4 +1,5 @@
 import ProfileImg from "../header/ProfileImg";
+import "./viewauthor.css";
 
 function ViewAuthor() {
   return (

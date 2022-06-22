@@ -2,38 +2,20 @@ import Author from "./Author";
 import Category from "./Category";
 import { Link } from "react-router-dom";
 
-const Contents = ({ post }) => {
+const Contents = ({ data }) => {
   return (
     <>
-      {post.map((post) => {
+      {data.map((posts) => {
         return (
           <li>
             <Link to="/postview" className="post">
               <article>
-                <img src={post.thumbnail} alt="" />
+                <img src={posts.thumbnail} alt="" />
                 <div className="contents-wrap">
                   <Category />
-                  <h3>{post.title}</h3>
+                  <h3>{posts.title}</h3>
                   <Author />
-                  <p class="post-description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Inventore illum nostrum perferendis voluptas, voluptate
-                    soluta corrupti dolore quidem. Placeat, eaque!
-                    Exercitationem est facilis dolor quas odio cum incidunt
-                    repudiandae vel. Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Inventore illum nostrum perferendis
-                    voluptas, voluptate soluta corrupti dolore quidem. Placeat,
-                    eaque! Exercitationem est facilis dolor quas odio cum
-                    incidunt repudiandae vel. Lorem ipsum dolor sit amet
-                    consectetur, adipisicing elit. Inventore illum nostrum
-                    perferendis voluptas, voluptate soluta corrupti dolore
-                    quidem. Placeat, eaque! Exercitationem est facilis dolor
-                    quas odio cum incidunt repudiandae vel. Lorem ipsum dolor
-                    sit amet consectetur, adipisicing elit. Inventore illum
-                    nostrum perferendis voluptas, voluptate soluta corrupti
-                    dolore quidem. Placeat, eaque! Exercitationem est facilis
-                    dolor quas odio cum incidunt repudiandae vel."
-                  </p>
+                  <p class="post-description">{posts.contents[0].text}</p>
                 </div>
               </article>
             </Link>

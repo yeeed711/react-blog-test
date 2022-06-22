@@ -1,3 +1,5 @@
+import "./viewcontents.css";
+
 function ViewContents() {
   return (
     <div class="view-contents">
@@ -17,7 +19,7 @@ function ViewContents() {
         corrupti dolore quidem. Placeat, eaque! Exercitationem est facilis dolor
         quas odio cum incidunt repudiandae vel.
       </p>
-      <img src="./images/post-background6.jpg" alt="" />
+      <img src="./assets/post-background6.jpg" alt="" />
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
         illum nostrum perferendis voluptas, voluptate soluta corrupti dolore
