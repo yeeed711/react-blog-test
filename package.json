@@ -1,5 +1,6 @@
 {
   "name": "react-blog",
+  "homepage": "https://yeeed711.github.io/react-blog-test/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
