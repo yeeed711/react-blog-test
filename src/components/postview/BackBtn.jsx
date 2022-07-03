@@ -4,7 +4,7 @@ import "./backbtn.css";
 function BackBtn() {
   return (
     <Link to="/" class="btn-back">
-      <span class="a11y-hidden">Back</span>
+      <span class="ir">Back</span>
     </Link>
   );
 }

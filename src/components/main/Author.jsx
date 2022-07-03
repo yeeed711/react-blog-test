@@ -1,16 +1,16 @@
 import ProfileImg from "../header/ProfileImg";
 import "./author.css";
 
-function Author() {
+function Author({ userName, created }) {
   return (
     <dl className="author-wrap">
-      <dt className="a11y-hidden">Author</dt>
+      <dt className="ir">Author</dt>
       <dd className="author">
         <ProfileImg />
-        Chilli
+        {userName}
       </dd>
-      <dt className="a11y-hidden">Created</dt>
-      <dd className="created">{}</dd>
+      <dt className="ir">Created</dt>
+      <dd className="created">{created}</dd>
     </dl>
   );
 }

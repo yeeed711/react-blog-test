@@ -7,7 +7,7 @@ import BackBtn from "./BackBtn";
 import BtnGroup from "./BtnGroup";
 import "./view.css";
 
-function View() {
+function View({ posts }) {
   return (
     <div class="view">
       <div class="max-width">

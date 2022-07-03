@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={Homepages} />
-          <Route path="/postview" exact component={PostView} />
+          <Route path="/postview" component={PostView} />
         </Switch>
       </BrowserRouter>
     </>

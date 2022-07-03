@@ -1,11 +1,11 @@
 import "./post.css";
 import Posts from "./Posts";
 
-function Post() {
+function Post({ posts }) {
   return (
     <>
-      <h2 className="a11y-hidden">Post</h2>
-      <Posts />
+      <h2 className="ir">Post</h2>
+      <Posts posts={posts} />
     </>
   );
 }

@@ -1,29 +1,13 @@
 import "./categories.css";
 
-function Categories() {
+function Categories({ category }) {
   return (
     <ul class="categories">
-      <li>
-        <a href="#none">Life</a>
-      </li>
-      <li>
-        <a href="#none">Style</a>
-      </li>
-      <li>
-        <a href="#none">Tech</a>
-      </li>
-      <li>
-        <a href="#none">Sport</a>
-      </li>
-      <li>
-        <a href="#none">Photo</a>
-      </li>
-      <li>
-        <a href="#none">Develop</a>
-      </li>
-      <li>
-        <a href="#none">Music</a>
-      </li>
+      {category.map((item, index) => (
+        <li key={index}>
+          <a href="#none">{item}</a>
+        </li>
+      ))}
     </ul>
   );
 }

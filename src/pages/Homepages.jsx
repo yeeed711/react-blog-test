@@ -1,16 +1,18 @@
 import React from "react";
 import Header from "../components/header/Header";
-import Banner from "../components/banner/Banner";
 import Main from "../components/main/Main";
 import Footer from "../components/footer/Footer";
+import useAxios from "../components/hooks/useAxios";
 
 export default function Homepages() {
+  const { data } = useAxios("./data.json");
   return (
-    <>
-      <Header />
-      <Banner />
-      <Main />
-      <Footer />
-    </>
+    data && (
+      <>
+        <Header />
+        <Main blog={data.blog} posts={data.posts} users={data.users} />
+        <Footer />
+      </>
+    )
   );
 }

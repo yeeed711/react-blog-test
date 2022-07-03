@@ -1,14 +1,14 @@
 import ProfileImg from "../header/ProfileImg";
 import "./viewauthor.css";
 
-function ViewAuthor() {
+function ViewAuthor({ posts }) {
   return (
     <dl class="author-wrap">
-      <dt class="a11y-hidden">Author</dt>
+      <dt class="ir">Author</dt>
       <dd class="author">
         <ProfileImg /> Chilli
       </dd>
-      <dt class="a11y-hidden">Created</dt>
+      <dt class="ir">Created</dt>
       <dd class="created">2022.05.25</dd>
     </dl>
   );
