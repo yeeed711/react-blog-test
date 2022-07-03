@@ -5,9 +5,14 @@ function Category({ category }) {
     <>
       <dl className="category">
         <dt className="ir">Category</dt>
-        {category.map((item) => (
-          <dd key={item}>{item}</dd>
-        ))}
+        {category ? (
+          category.map((item) => <dd key={item}>{item}</dd>)
+        ) : (
+          <>
+            <dd>Life</dd>
+            <dd>Style</dd>
+          </>
+        )}
       </dl>
     </>
   );

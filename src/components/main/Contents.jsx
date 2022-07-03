@@ -3,7 +3,6 @@ import Category from "./Category";
 import { Link } from "react-router-dom";
 
 export default function Contents({
-  id,
   thumbnail,
   title,
   category,
@@ -14,7 +13,7 @@ export default function Contents({
   return (
     <>
       <li>
-        <Link to={`/postview/${id}`} className="post">
+        <Link to="/postview" className="post">
           <article>
             <img src={thumbnail} alt="" />
             <div className="contents-wrap">

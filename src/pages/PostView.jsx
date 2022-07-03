@@ -3,16 +3,19 @@ import Banner from "../components/postview/Banner";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import View from "../components/postview/View";
+import useAxios from "../components/hooks/useAxios";
 
 function PostView() {
+  const { data } = useAxios("./data.json");
   return (
-    <>
-      <Header />
-      <Banner />
-      {/* 여기에 상세페이지 추가 */}
-      <View />
-      <Footer />
-    </>
+    data && (
+      <>
+        <Header />
+        <Banner />
+        <View posts={data.posts} />
+        <Footer />
+      </>
+    )
   );
 }
 

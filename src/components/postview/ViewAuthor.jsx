@@ -1,7 +1,7 @@
 import ProfileImg from "../header/ProfileImg";
 import "./viewauthor.css";
 
-function ViewAuthor({ posts }) {
+function ViewAuthor() {
   return (
     <dl class="author-wrap">
       <dt class="ir">Author</dt>
